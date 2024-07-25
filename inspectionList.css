@@ -514,9 +514,12 @@ td {
     height: 20px;
 }
 
-/* .header{
-    margin-top: -50px;
-} */
+.table-content{
+    margin-left: -70px;
+    width: 100vw;
+    z-index: 1;
+    position: absolute;
+}
 
 .inspection-header {
     display: flex;
@@ -529,13 +532,14 @@ td {
 
 .inspection-header .title-group {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .inspection-header .button-group{
     margin-top: 10px;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-end;
 }
 

@@ -504,4 +504,12 @@ button.re-assign{
     flex-direction: column;
     justify-content: space-between;
 }
+.user-actions .notification-icon {
+    width: 20px;
+    height: 20px;
+}
+.user-profile img {
+    width: 20px;
+    height: 20px;
+}
 }
