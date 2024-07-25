@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ravenheight.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <div class="close-icon" id="close-icon">&times;</div>
+            <div class="black-bg">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="dashboardOverview.html" ><img src="images/dashboard_icon.png" alt=""></a></li>
+                        <li><a href="#" class="active"><img src="images/calender_icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/bag_icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/Dribbble Light Preview.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/chart_icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/setting_icon.png" alt=""></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="white-bg">
+                <div class="sidebar-expansion">
+                    <div class="logo">
+                        <img src="images/LAC Logo Alt 2.png" alt="Leadway Logo">
+                    </div>
+                    <p>TRM</p>
+                    <ul>
+                       <li><a href="dashboardOverview.html" ><img src="images/dasboard_overview_icon_gray.svg" alt=""> Overview</a></li>
+                        <li><img src="images/request_gray_icon.svg" alt=""><a href="inspectionList.html" class="active"> Requests</a></li>
+                    </ul> 
+                </div>
+            </div>
+            
+        </aside>
+
+        <div class="overlay" id="overlay"></div>
+        <main class="main-content">
+            <div class="hamburger-menu" id="hamburger-menu">&#9776;</div>
+            <header class="header">
+                <div class="user-actions">
+                    <i class="fas fa-bell"></i>
+                    <div class="user-profile">
+                        <img src="images/profile.png" alt="User Profile">
+                        <span>Adesola</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="ravenheight-container">
+                <div class="roven-header">
+                    <h1>Rovenheight Properties</h1>
+                    <p>See Inspection request details</p>
+                </div>
+                <div class="content">
+                    <div class="profile-container">
+                        
+                        <img src="images/roven-height.png" alt="Goodness Ibeneme">
+                        <h2>Goodness Ibeneme</h2>
+                        <p class="status ongoing">Inspection Status: <span>ongoing</span></p>
+                        
+                        <div class="profile-details">
+                            <div class="profile-content">
+                                <p class="profile-heading">Claim Number</p>
+                                <p>ASD12358493</p>
+                            </div>
+    
+                            <div class="profile-content">
+                                <p class="profile-heading">Policy Number</p>
+                                <p>MTR12358493</p>
+                            </div>
+    
+                            <div class="profile-content">
+                                <p class="profile-heading">Commencement Date</p>
+                                <p>31 May 2022</p>
+                            </div>
+                            <div class="profile-content">
+                                <p class="profile-heading">Sum Assured (₦)</p>
+                                <p>1,000,000</p>
+                            </div>
+                            <div class="profile-content">
+                                <p class="profile-heading">Premium (₦)</p>
+                                <p>10,000</p>
+                            </div>
+                            <div class="profile-content">
+                                <p class="profile-heading">Vehicle Type</p>
+                                <p>Car</p>
+                            </div>
+                            <div class="profile-content">
+                                <p class="profile-heading">Policy Term (Years)</p>
+                                <p>5</p>
+                            </div>
+                            <div class="profile-content">
+                                <p class="profile-heading">Expiry Date</p>
+                                <p>19 Dec, 2024</p>
+                            </div>
+                          
+                        </div>
+                    </div>
+    
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div class="dot" style="top: 20px;"></div>
+                        <div class="dot" style="top: 150px;"></div>
+                    </div>
+    
+                    
+                    <div class="requests">
+                        <div class="request-content">
+                            <div class="request-header">
+                                <span class="date">25 Jan, 2020 9:39 AM</span>
+                            </div>
+                            <div class="request-details">
+                                <div class="side orange"></div>
+                                <div class="request-body">
+                                    <div class="icon-details">
+                                        <img src="images/document-icon.svg" alt="">
+                                        <div class="circle"></div>
+                                    </div>
+                                    <div class="details">
+                                        <p>You created request for Post Loss Inspection</p>
+                                        <p class="orange-text">Leadway Assurance</p>
+                                        <p class="document">Documents reviewed</p>
+                                    </div>
+                                    <button class="view-request" onclick="viewRequest()">View request</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+    
+                        <div class="request-content">
+                            <div class="request-header">
+                                <span class="date">25 Jan, 2020 9:39 AM</span>
+                            </div>
+                            <div class="request-details">
+                                <div class="side grey"></div>
+                                <div class="request-body">
+                                    <div class="icon-details">
+                                        <img src="images/document-icon.svg" alt="">
+                                        <div class="circle green"></div>
+                                    </div>
+                                    <div class="details">
+                                        <p>Request Assigned </p>
+                                        <p class="gray">Leadway Assurance</p>
+                                        <p class="document">Assigned to Engineer Olaniyi</p>
+                                    </div>
+                                    <button class="re-assign">Re-assign</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            
+
+        </main>
+    </div>
+
+    <script>
+        //Hamburger menu starts here
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const closeIcon = document.getElementById('close-icon');
+        const sidebar = document.getElementById('sidebar');
+
+        hamburgerMenu.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+
+        closeIcon.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+        //Hamburger menu ends here
+        function viewRequest() {
+    window.location.href = 'surveyreport.html';
+}
+    </script>
+    
+</body>
+</html>

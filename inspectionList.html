@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspection List</title>
+    <link rel="stylesheet" href="inspectionList.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <nav>
+             <!-- sidebar starts here -->
+        <aside class="sidebar" id="sidebar">
+            <div class="close-icon" id="close-icon">&times;</div>
+            <div class="black-bg">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#" ><img src="images/dashboard_icon.png" alt=""></a></li>
+                        <li><a href="#" class="active"><img src="images/calender_icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/bag_icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/Dribbble Light Preview.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/chart_icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/setting_icon.png" alt=""></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="white-bg">
+                <div class="sidebar-expansion">
+                    <div class="logo">
+                        <img src="images/LAC Logo Alt 2.png" alt="Leadway Logo">
+                    </div>
+                    <p>TRM</p>
+                    <ul>
+                        <li><a href="dashboardOverview.html"><img src="images/dasboard_overview_icon_gray.svg" alt=""> Overview</a></li>
+                        <li><a href="#" class="active"><img src="images/request_gray_icon.svg" alt=""> Requests</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <!-- sidebar ends here -->
+        <div class="overlay" id="overlay"></div>
+
+       
+        </nav>
+       
+
+        <main class="main-content">
+            <div class="hamburger-menu" id="hamburger-menu">&#9776;</div>
+            
+             <!-- navigation tab starts here -->
+    <header class="header">
+        <div class="user-actions">
+            <img class="notification-icon" src="images/bell_icon.svg" />
+            <div class="user-profile">
+                <img src="images/profile.png" alt="User Profile">
+                <span>Adesola</span>
+                <img src="images/down_arrow_icon.svg" alt="" class="down-arrow">
+            </div>
+        </div>
+    </header>
+    <!-- navigation tab ends here -->
+    <div class="table-content">
+        <div class="inspection-header">
+            <div class="title-group">
+                <h1>Inspection List</h1>
+                <p>See Inspections across all business classes</p>
+            </div>
+            <div class="button-group">
+                <button id="newInspect-btn" type="button">
+                    <i class="fas fa-plus"></i>
+                    Create New Inspection
+                </button>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <div class="tab-links">
+                <button class="active" data-tab="all-requests">All Requests</button>
+                <button data-tab="ongoing">Ongoing</button>
+                <button data-tab="completed">Completed</button>
+            </div>
+            <div class="filter-group">
+                <input type="text" id="search-input" placeholder="Search">
+                <div class="filter-tag">
+                    <div class="marine-filter">
+                        <div class="circle"></div>
+                    <span>Marine</span>
+                    </div>
+                    <i class="fas fa-times"></i>
+                </div>
+                <select>
+                    <option>Sort by: Class</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="table-container">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <div class="id-container">
+                                <span class="id-text">ID</span><img src="images/up_down_arrow_icon.svg" class="icon" alt="">
+                            </div>
+                        </th>
+                        <th>
+                            <div class="id-container">
+                                <span class="id-text">Date</span><i class="fa-solid fa-up-down icon"></i></i>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="id-container">
+                                <span class="id-text">Name</span><i class="fas fa-chevron-down icon"></i>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="id-container">
+                                <span class="id-text">Inspection method</span><i class="fas fa-chevron-down icon"></i>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="id-container">
+                                <span class="id-text">Officer</span><i class="fas fa-chevron-down icon"></i>
+                            </div>
+                        </th>
+                        <th>
+                            <div class="id-container">
+                                <span class="id-text">Status</span><i class="fas fa-chevron-down icon"></i>
+                            </div>
+                        </th>
+                       
+                    </tr>
+                </thead>
+                <tbody id="all-requests" class="tab-content active">
+                    <tr>
+                        <td>10321</td>
+                        <td>15/06/2023</td>
+                        <td>Rovenheights properties</td>
+                        <td>Digital</td>
+                        <td>Mustapha Onasanya</td>
+                        <td><a href="ravenheight.html" class="status-ongoing">Ongoing</a></td>
+                    </tr>
+                    <tr>
+                        <td>10321</td>
+                        <td>12/06/2023</td>
+                        <td>Shoprite Stores</td>
+                        <td>Manual</td>
+                        <td>Mustapha Onasanya</td>
+                        <td><span class="status-completed">Completed</span></td>
+                    </tr>
+                </tbody>
+
+                <tbody id="ongoing" class="tab-content">
+                    <tr>
+                        <td>10321</td>
+                        <td>15/06/2023</td>
+                        <td>Rovenheights properties</td>
+                        <td>Digital</td>
+                        <td>Mustapha Onasanya</td>
+                        <td><span class="status-ongoing">Ongoing</span></td>
+                    </tr>
+                    <tr>
+                        <td>10321</td>
+                        <td>12/06/2023</td>
+                        <td>Shoprite Stores</td>
+                        <td>Manual</td>
+                        <td>Mustapha Onasanya</td>
+                        <td><span class="status-ongoing">Ongoing</span></td>
+                    </tr>
+                </tbody>
+                <tbody id="completed" class="tab-content">
+                    <tr>
+                        <td>10321</td>
+                        <td>15/06/2023</td>
+                        <td>Rovenheights properties</td>
+                        <td>Digital</td>
+                        <td>Mustapha Onasanya</td>
+                        <td><span class="status-completed">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td>10321</td>
+                        <td>12/06/2023</td>
+                        <td>Shoprite Stores</td>
+                        <td>Manual</td>
+                        <td>Mustapha Onasanya</td>
+                        <td><span class="status-completed">Completed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+            
+
+            </main>
+    </div>
+
+
+
+    <script>
+        // JavaScript code to handle button click event
+        document.getElementById('newInspect-btn').addEventListener('click', function() {
+            // Redirect to the login.html page
+            window.location.href = 'newInspection.html';
+        });
+
+        //Hamburger menu starts here
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const closeIcon = document.getElementById('close-icon');
+        const sidebar = document.getElementById('sidebar');
+
+        hamburgerMenu.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+
+        closeIcon.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+        //Hamburger menu ends here
+
+
+    //     document.querySelectorAll('.tab-links button').forEach(button => {
+    //     button.addEventListener('click', () => {
+    //         document.querySelectorAll('.tab-links button').forEach(btn => btn.classList.remove('active'));
+    //         button.classList.add('active');
+            
+    //         const tabContent = document.querySelectorAll('.tab-content');
+    //         tabContent.forEach(content => content.classList.remove('active'));
+            
+    //         const activeTab = button.getAttribute('data-tab');
+    //         document.getElementById(activeTab).classList.add('active');
+    //     });
+    // });
+
+    document.querySelectorAll('.tab-links button').forEach(button => {
+    button.addEventListener('click', () => {
+        document.querySelectorAll('.tab-links button').forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+
+        const tabContent = document.querySelectorAll('.tab-content');
+        tabContent.forEach(content => content.classList.remove('active'));
+
+        const activeTab = button.getAttribute('data-tab');
+        document.getElementById(activeTab).classList.add('active');
+
+        const newInspectBtn = document.getElementById('newInspect-btn');
+        const searchInput = document.getElementById('search-input');
+
+        if (activeTab === 'ongoing' || activeTab === 'completed') {
+            newInspectBtn.classList.add('hidden'); // Hide newInspect-btn
+            searchInput.classList.add('visible'); // Show search-input and move to button position
+        } else {
+            newInspectBtn.classList.remove('hidden'); // Show newInspect-btn
+            searchInput.classList.remove('visible'); // Hide search-input
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

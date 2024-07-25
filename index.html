@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Portal-TRM Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+      
+
+        <!-- Container details -->
+        <div class="container-details">
+            <div class="logo">
+                <img src="images/Leadway Logo.png" alt="Leadway Logo">
+            </div>
+
+            <div class="signIn-text">
+                <h2>Underwriter Dashboard</h2>
+                <p>Welcome. Login to your portal account.</p>
+            </div>
+
+            <form>
+                <div class="login-input">
+                    <label for="login-id">Login ID</label>
+                    <div class="input-content">
+                        <input type="text" id="login-id" placeholder="enter your login ID">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+                </div>
+
+                <div class="password-input">
+                    <div class="password-text">
+                        <label for="password">Password</label>
+                    <a href="">SHOW</a>
+                    </div>
+                    
+                    <div class="input-content">
+                        <input type="password" id="password" placeholder="enter your password">
+                        <i class="fa-solid fa-lock"></i>
+                    </div>
+                </div>
+
+                <div class="options">
+                    <div class="option1">
+                        <input type="checkbox" id="keep-logged-in">
+                        <label for="keep-logged-in">Keep me logged in</label>
+                    </div>
+
+                    <div class="option2">
+                        <a href="#">Reset Password</a>
+                    </div>
+                </div>
+
+                <button id="loginButton" type="button">Login</button>
+            </form>
+        </div>
+
+          <!-- Container for image -->
+          <div class="img-container">
+            <img src="images/Broker Portal 1.png" alt="Dashboard Illustration">
+
+            <div class="customer-management">
+                <div class="customer-logo">
+                    <img src="images/CustomerManagement_logo.png" alt="">
+                </div>
+                <div class="customer-content">
+                    <h4>Customer Management</h4>
+                    <p>Manage all customers from individual customers to corporate or group customers.</p>
+                </div>
+            </div>
+            <div class="help">
+                <a href="#">Help</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // JavaScript code to handle button click event
+        document.getElementById('loginButton').addEventListener('click', function() {
+            // Redirect to the login.html page
+            window.location.href = 'dashboardOverview.html';
+        });
+    </script>
+</body>
+</html>

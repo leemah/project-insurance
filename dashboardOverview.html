@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadway Assurance Dashboard</title>
+    <link rel="stylesheet" href="dashboardOverview.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <div class="close-icon" id="close-icon">&times;</div>
+            <div class="black-bg">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#" ><img src="images/dashboard_icon.png" alt=""></a></li>
+                        <li><a href="#" class="active"><img src="images/calender_icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/bag_icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/Dribbble Light Preview.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/chart_icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/setting_icon.png" alt=""></a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+            <div class="white-bg">
+                <div class="sidebar-expansion">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/LAC Logo Alt 2.png" alt="Leadway Logo"></a>
+                        
+                    </div>
+                    <p>TRM</p>
+                    <ul>
+                        <li><img src="images/overview_dashboard_icon.svg" alt=""><a href="#" class="active"> Overview</a></li>
+                        <li><img src="images/request_icon.svg" alt=""><a href="inspectionList.html"> Requests</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        
+        <div class="overlay" id="overlay"></div>
+
+        <main class="main-content">
+            <div class="hamburger-menu" id="hamburger-menu">&#9776;</div>
+            <header class="header">
+                
+                <div class="user-actions">
+                    <img class="notification-icon" src="images/bell_icon.svg" />
+                    <div class="user-profile">
+                        <img src="images/profile.png" alt="User Profile">
+                        <span>Adesola</span>
+                        <img src="images/down_arrow_icon.svg" alt="" class="down-arrow">
+                    </div>
+                </div>
+            </header>
+
+            <div class="dashboard-content">
+                <div class="welcome-greeting">
+                    <div class="greeting">
+                        <h2>Welcome, <span>Olufemi</span></h2>
+                        <p>Take a look at your dashboard and see all pending tasks</p>
+                    </div>
+    
+                    <button id="newInspection-btn" type="button">
+                        <img src="images/plus_icon.svg" alt="">
+                        Create New Inspection
+                    </button>
+                </div>
+                <section class="dashboard">
+                    <div class="cards">
+                        <div class="card blue">
+                            <div class="icon">
+                                <img src="images/handpointer_icon.png" alt="Icon" width="30px">
+                            </div>
+                            <div class="card-text">
+                                <h3>Completed Requests</h3>
+                            <span>114</span>
+                            </div>
+                            
+                        </div>
+    
+                        <div class="card green">
+                            <div class="icon">
+                                <img src="images/handpointer_icon.png" alt="Icon" width="30px">
+                            </div>
+                            <div class="card-text">
+                                <h3>Completed Requests</h3>
+                            <span>114</span>
+                            </div>
+                            
+                        </div>
+                        <div class="card yellow">
+                            <div class="icon">
+                                <img src="images/handpointer_icon.png" alt="Icon" width="30px">
+                            </div>
+                            <div class="card-text">
+                                <h3>Completed Requests</h3>
+                            <span>114</span>
+                            </div>
+                            
+                        </div>
+                        <div class="card red">
+                            <div class="icon">
+                                <img src="images/handpointer_icon.png" alt="Icon" width="30px">
+                            </div>
+                            <div class="card-text">
+                                <h3>Completed Requests</h3>
+                            <span>114</span>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="activity">
+                        <div class="activity-heading">
+                            <h3>Activity</h3>
+                            <div class="activity-view">
+                                <span>View</span>
+                                <img src="images/arrow_left_icon.svg" alt="">
+                            </div>
+                        </div>
+                        <hr>
+                        
+    
+                        <ul>
+                            <li>
+                                <p>You have a property inspection coming up in <br> three days</p>
+                                <a href="#">Set reminder</a>
+                            </li>
+                            <li>
+                                <p>Mustapha Onasanya sent a new property <br> inspection for Rovenheight homes</p>
+                                <a href="#">See inspection</a>
+                            </li>
+                            <li>
+                                <p>Your scheduled inspection for Gig Logistics is <br> three days overdue</p>
+                                <a href="#">Re-schedule now</a>
+                            </li>
+                            <li>
+                                <p>Mustapha Onasanya sent a new property <br> inspection for Rovenheight homes</p>
+                                <a href="#">See inspection</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </section>
+                <div class="inspections">
+                    <div class="inspections-heading">
+                        <h3>Created Inspections</h3>
+                    <a href="">View All</a>
+                    </div>
+
+                    <div style="overflow-x: auto;">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <div><span>ID</span><img src="images/up_down_arrow_icon.svg" alt=""></div>
+                                    </th>
+                                    <th><div><span>Name</span><img src="images/up_down_arrow_icon.svg" alt=""></div></th>
+                                    <th><div><span>Class</span><img src="images/up_down_arrow_icon.svg" alt=""></div></th>
+                                    <th><div><span>Inspection method</span><img src="images/up_down_arrow_icon.svg" alt=""></div></th>
+                                    <th><div><span>Officer</span><img src="images/up_down_arrow_icon.svg" alt=""></div></th>
+                                    <th><div><span>Status</span><img src="images/up_down_arrow_icon.svg" alt=""></div></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>GIG Logistics</td>
+                                    <td><div class="purple"></div>Marine</td>
+                                    <td>Digital</td>
+                                    <td>Mustapha Onasanya</td>
+                                    <td class="quote-request">QUOTE REQUEST</td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Shoprite Stores</td>
+                                    <td>Property</td>
+                                    <td>Manual</td>
+                                    <td>Mustapha Onasanya</td>
+                                    <td>
+                                        <div class="status green-completed">Completed</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Abiodun Abayomi</td>
+                                    <td>Motors</td>
+                                    <td>Digital</td>
+                                    <td>Mustapha Onasanya</td>
+                                    <td>
+                                        <div class="status orange-ongoing">Ongoing</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Ben's Agro Allied</td>
+                                    <td>Agric</td>
+                                    <td>Manual</td>
+                                    <td>Mustapha Onasanya</td>
+                                    <td class="engineer">SENT TO ENGINEER</td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Abiodun Abayomi</td>
+                                    <td>Bond</td>
+                                    <td>Digital</td>
+                                    <td>Mustapha Onasanya</td>
+                                    <td>
+                                        <div class="statusExpired inspectionRed">
+                                            <img src="images/cancel_icon.svg" alt="">
+                                            <span class="expired">Link expired</span>
+                                        </div>
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Julius Berger</td>
+                                    <td>Engineering</td>
+                                    <td>Digital</td>
+                                    <td>Mustapha Onasanya</td>
+                                    <td>
+                                        <div class="statusInspect inspectiongray">
+                                            <img src="images/corner-up-left.svg" alt="">
+                                            <span class="inspection-link">Inspection link</span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>10321</td>
+                                    <td>Shoprite Stores</td>
+                                    <td>Property</td>
+                                    <td>Manual</td>
+                                    <td>Mustapha Onasanya</td>
+                                    <td>
+                                        <div class="status green-completed">Completed</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+        </main>
+    </div>
+
+    <script>
+        // JavaScript code to handle button click event
+        document.getElementById('newInspection-btn').addEventListener('click', function() {
+            // Redirect to the login.html page
+            window.location.href = 'newInspection.html';
+        });
+
+        const hamburgerMenu = document.getElementById('hamburger-menu');
+        const closeIcon = document.getElementById('close-icon');
+        const sidebar = document.getElementById('sidebar');
+
+        hamburgerMenu.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+
+        closeIcon.addEventListener('click', () => {
+            sidebar.classList.toggle('active');
+        });
+    </script>
+   
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Inspection</title>
+    <link rel="stylesheet" href="newInspection.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <div class="close-icon" id="close-icon">&times;</div>
+            <div class="black-bg">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="dashboardOverview.html" ><img src="images/dashboard_icon.png" alt=""></a></li>
+                        <li><a href="#" class="active"><img src="images/calender_icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/bag_icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/Dribbble Light Preview.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/chart_icon.png" alt=""></a></li>
+                        <li><a href="#"><img src="images/setting_icon.png" alt=""></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="white-bg">
+                <div class="sidebar-expansion">
+                    <div class="logo">
+                        <img src="images/LAC Logo Alt 2.png" alt="Leadway Logo">
+                    </div>
+                    <p>TRM</p>
+                    <ul>
+                       <li><a href="#" ><img src="images/dasboard_overview_icon_gray.svg" alt=""> Overview</a></li>
+                        <li><img src="images/request_gray_icon.svg" alt=""><a href="inspectionList.html" class="active"> Requests</a></li>
+                    </ul> 
+                </div>
+            </div>
+            
+        </aside>
+        <div class="hamburger-menu" id="hamburger-menu">&#9776;</div>
+        <div class="overlay" id="overlay"></div>
+        
+        <main class="main-content">
+            <header class="header">
+                <div class="user-actions">
+                    <img class="notification-icon" src="images/bell_icon.svg" />
+                    <div class="user-profile">
+                        <img src="images/profile.png" alt="User Profile">
+                        <span>Adesola</span>
+                        <img src="images/down_arrow_icon.svg" alt="" class="down-arrow">
+                    </div>
+                </div>
+            </header>
+
+            <div class="newInspection-content">
+                <div class="inspection-container">
+                    <div class="content">
+                        <div class="content-left">
+                            <h1>Create New Inspection</h1>
+                            <p>See inspections across all business classes</p>
+                        </div>
+                        <div class="content-right">
+                            <span class="close-icon2"><img src="images/clarity_close-line.svg" alt=""></span>
+                            <p>Close</p>
+                            
+                        </div>
+                    </div>
+                  <div class="container-select">
+                    <section class="inspection-type">
+                        <div class="inspection-option" id="pre-loss">
+                            <div class="icon pre-loss-icon"></div>
+                            <p>Pre-loss Inspection</p>
+                        </div>
+                        
+                            <div class="inspection-option" id="post-loss">
+                                <div class="icon pre-loss-icon"></div>
+                                <p>Post-loss Inspection</p>
+                            </div>
+                            
+                        
+                    </section>
+                    <section class="class-selection">
+                        <div class="dropdown-heading">
+                            <label for="class-select">Choose a class</label>
+                            <div class="dropdown">
+                                <button class="dropbtn">
+                                <div>
+                                    <div class="circle"></div>
+                                    <span class="selected-class">Property</span>
+                                </div>
+                                    
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <!-- <a href="#" class="dropdown-item property" data-class="Property">Property</a> -->
+                                    <a href="#" class="dropdown-item motors" data-class="Motors">Motors</a>
+                                    <a href="#" class="dropdown-item property" data-class="property">Property</a>
+                                    <a href="#" class="dropdown-item marine" data-class="marine">Marine</a>
+                                    <a href="#" class="dropdown-item agric" data-class="agric">Agric</a>
+                                    <a href="#" class="dropdown-item bond" data-class="bond">Bond</a>
+                                    <a href="#" class="dropdown-item engineering" data-class="engineering">Engineering</a>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="button-group">
+                            <button id="create-request-button" type="button">
+                                <img src="images/Icon_Arrow_Left.svg" alt="">
+                                <span>Create Request</span>
+                            </button>
+                        </div>
+                        
+                    </section>
+                  </div>
+                </div>
+            </div>
+
+            
+        </main>
+    </div>
+
+
+    <script>
+        //Hamburger Script starts here
+        // const hamburgerMenu = document.getElementById('hamburger-menu');
+        // const closeIcon = document.getElementById('close-icon');
+        // const sidebar = document.getElementById('sidebar');
+
+        // hamburgerMenu.addEventListener('click', () => {
+        //     sidebar.classList.toggle('active');
+        // });
+
+        // closeIcon.addEventListener('click', () => {
+        //     sidebar.classList.toggle('active');
+        // });
+
+    document.addEventListener("DOMContentLoaded", function() {
+    var hamburgerMenu = document.querySelector(".hamburger-menu");
+    var sidebar = document.querySelector("#sidebar");
+    var closeIcon = document.querySelector(".close-icon");
+
+    hamburgerMenu.addEventListener("click", function() {
+        sidebar.classList.toggle("active");
+    });
+
+    closeIcon.addEventListener("click", function() {
+        sidebar.classList.remove("active");
+    });
+});
+        //Hamburger Script Ends here
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+    // Handle content-right click
+    var contentRight = document.querySelector('.content-right');
+    if (contentRight) {
+        contentRight.addEventListener('click', function() {
+            window.location.href = 'dashboardOverview.html';
+        });
+    }
+
+    // Handle dropdown item click
+    const dropdownItems = document.querySelectorAll('.dropdown-item');
+    const selectedClass = document.querySelector('.selected-class');
+    let currentClass = 'property'; // Default class
+
+    dropdownItems.forEach(item => {
+        item.addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the default anchor click behavior
+            const selected = this.getAttribute('data-class');
+            selectedClass.textContent = selected;
+            currentClass = selected.toLowerCase(); // Set the current class
+        });
+    });
+
+    // Handle inspection option click and create request button click
+    const preLossOption = document.getElementById('pre-loss');
+    const postLossOption = document.getElementById('post-loss');
+    const createRequestButton = document.getElementById('create-request-button');
+    const inspectionOptions = document.querySelectorAll('.inspection-option');
+
+    let redirectUrl = ''; // Variable to store the URL to redirect to
+
+    function activateButtonAndBorder(option, url) {
+        createRequestButton.classList.add('button-orange'); // Activate the button
+        inspectionOptions.forEach(opt => opt.classList.remove('inspection-option-orange-border')); // Remove border from all options
+        option.classList.add('inspection-option-orange-border'); // Add border to the clicked option
+        redirectUrl = url; // Set the redirect URL based on the selected option
+    }
+
+    preLossOption.addEventListener('click', () => {
+        let url = '';
+        if (currentClass === 'property') {
+            url = 'createRequest.html';
+        } else if (currentClass === 'motors') {
+            url = 'motorPreloss.html';
+        }
+        activateButtonAndBorder(preLossOption, url); // Set URL for pre-loss
+    });
+
+    postLossOption.addEventListener('click', () => {
+        let url = '';
+        if (currentClass === 'property') {
+            url = 'postLoss.html';
+        } else if (currentClass === 'motors') {
+            url = 'motorPostloss.html';
+        }
+        activateButtonAndBorder(postLossOption, url); // Set URL for post-loss
+    });
+
+    createRequestButton.addEventListener('click', function() {
+        if (createRequestButton.classList.contains('button-orange')) {
+            window.location.href = redirectUrl; // Redirect to the appropriate URL
+        } else {
+            alert('Please select an inspection type first.'); // Alert if no option is selected
+        }
+    });
+});
+    </script>
+</body>
+</html>
