@@ -12,15 +12,16 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Mulish', sans-serif;
+    /* overflow-x: hidden; */
 }
 
 .container {
     display: flex;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
-.sidebar {
+#sidebar {
     display: flex;
     flex-direction: row;
     width: 250px;
@@ -30,7 +31,6 @@ body {
 .black-bg {
     background-color: #2F2F2F;
     width: 100px;
-    /* height: 1216px; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -110,6 +110,8 @@ body {
 
 .sidebar-expansion ul li {
     margin: 20px 0;
+    display: flex;
+    gap: 5px;
 }
 
 .sidebar-expansion ul li a {
@@ -124,7 +126,7 @@ body {
     color: #FF7A00;
 }
 
-.sidebar-expansion ul li a i {
+.sidebar-expansion ul li a img {
     margin-right: 10px;
 }
 
@@ -146,8 +148,9 @@ body {
 }
 
 .main-content {
+    width: calc(100% - 250px);
+    overflow-x: hidden;
     flex-grow: 1;
-    /* padding: 20px; */
     background-color: #FFFBF6;
 }
 
@@ -165,19 +168,22 @@ body {
     align-items: center;
 }
 
-.user-actions i {
+.user-actions .notification-icon {
     font-size: 24px;
     margin-right: 20px;
+    width: 20px;
+    height: 20px;
 }
 
 .user-profile {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .user-profile img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -185,8 +191,14 @@ body {
 .user-profile span {
     color: #585858;
 }
+.user-profile .down-arrow{
+    width: 10px;
+    height: 10px;
+}
 
-.ravenheight-container{
+
+
+/* .ravenheight-container{
     padding: 20px;
 }
 
@@ -197,7 +209,6 @@ body {
 }
 
 .roven-header {
-    /* justify-content: left; */
     text-align: left;
     margin-bottom: 20px;
 }
@@ -216,7 +227,6 @@ body {
 
 .content {
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
 }
 
@@ -320,29 +330,14 @@ body {
     margin-left: 20px;
 }
 
-/* .request-content {
-    background-color: white;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 15px;
-    position: relative;
-    width: 689px;
-    height: 104px;
-    border: 1px solid #D8D8D8
-
-} */
-
 .request-details{
     display: flex;
-    justify-content: space-between;
     background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     padding: 0px 15px 15px 0px;
     position: relative;
-    width: 689px;
     height: 104px;
     border: 1px solid #D8D8D8
 }
@@ -405,9 +400,12 @@ border-radius: 5px 0px 0px 5px;
 }
 
 .request-details .details {
-    margin-left: 20px;
-    font-size: 14px;
+    margin-left: 10px;
+    font-size: 13px;
     color: #34475E;
+}
+.request-details .details p{
+    font-size: 11px;
 }
 
 .details .orange-text{
@@ -428,7 +426,8 @@ border-radius: 5px 0px 0px 5px;
     border: none;
     border-radius: 3px;
     outline: none;
-    margin-left: 100px;
+    white-space: nowrap;
+    font-size: 12px;
 }
 
 button.re-assign {
@@ -437,16 +436,17 @@ button.re-assign {
     border: none;
     border-radius: 3px;
     outline: none;
-    margin-left: 100px;
+    margin-left: auto;
     color: #34475E;
     font-weight: 700;
+    font-size: 12px;
 }
 
 button.view-request, button.re-assign {
     background-color: #FF7A00;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -456,16 +456,12 @@ button.re-assign{
     background-color: #D4D4D4;
     color: #34475E;
     border: none;
-    padding: 10px 20px;
+    padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-}
-
-/* button.view-request:hover, button.re-assign:hover {
-    background-color: #D4D4D4;
-    color: #34475E;
 } */
+
 
 @media (max-width: 768px) {
     .content {
@@ -507,9 +503,5 @@ button.re-assign{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-.request-details{
-    width: 580px;
-    height: 104px;
 }
 }

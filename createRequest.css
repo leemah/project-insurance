@@ -69,11 +69,11 @@ body {
 .black-bg {
     background-color: #2F2F2F;
     width: 100px;
-    height: 1216px;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 
 .menu ul {
@@ -169,6 +169,8 @@ body {
     margin-right: 10px;
 }
 .main-content {
+    width: calc(100% - 250px);
+    overflow-x: hidden;
     flex-grow: 1;
     /* padding: 20px; */
     background-color: #FFFBF6;
@@ -179,7 +181,7 @@ body {
     justify-content: flex-end;
     align-items: center;
     padding: 20px;
-    /* margin-bottom: 20px; */
+    margin-bottom: 20px;
     box-shadow: 0px 2px 2px 0px rgba(217, 217, 217, 0.31);
     
 }
@@ -191,8 +193,8 @@ body {
 .user-actions .notification-icon {
     font-size: 24px;
     margin-right: 20px;
-    width: 24px;
-    height: 29px;
+    width: 20px;
+    height: 20px;
 }
 
 .user-profile {
@@ -201,8 +203,8 @@ body {
 }
 
 .user-profile img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -218,11 +220,13 @@ body {
 
 .request-container{
     padding: 20px;
+    width: 100%;
 }
 .content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
     /* margin-bottom: 136px; */
     margin-bottom: 50px;
 }
@@ -507,9 +511,15 @@ body {
     body{
         overflow-x: hidden;
     }
+    .container {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+    }
     .hamburger-menu {
         display: block;
         z-index: 2;
+        height: fit-content;
     }
 
     .sidebar {
@@ -531,6 +541,9 @@ body {
 .sidebar.active .close-icon {
     display: block;
 }
+.sidebar-expansion p, .sidebar-expansion ul li a {
+    font-size: 14px;
+}
 .white-bg {
     background-color: #FFF;
     flex-grow: 1;
@@ -539,9 +552,27 @@ body {
     flex-direction: column;
     justify-content: space-between;
 }
-.header{
-    margin-top: -60px;
+
+.user-actions .notification-icon {
+    width: 20px;
+    height: 20px;
 }
+.user-profile img {
+    width: 20px;
+    height: 20px;
+}
+.request-container{
+    margin-left: -70px;
+    width: 100vw;
+    z-index: 1;
+    position: absolute;
+}
+
+.content{
+    width: 100vw;
+    padding: 0 10px;
+}
+
 .content-left h1 {
     font-size: 18px;
 }
@@ -554,6 +585,9 @@ body {
 }
 .content-right p {
     font-size: 12px;
+}
+.form-container{
+    grid-template-columns: 1fr;
 }
 .form-item label{
     font-size: 12px;
