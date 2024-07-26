@@ -208,8 +208,9 @@ body {
     height: 10px;
 }
 
+
+
 .survey-details{
-    /* padding: 20px; */
     width: 100%;
 }
 
@@ -281,8 +282,6 @@ body {
 
 .info-card {
     width: 100%;
-    /* max-width: 600px;
-    background-color: #fff; */
     padding: 20px;
     text-align: left;
 }

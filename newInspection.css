@@ -308,13 +308,11 @@ body {
     left: 0%;
     top: 60px; 
     transform: translateX(-50%);
-    width: 48px; /* Adjust the width of the arrow as needed */
+    width: 48px; 
     height: auto;
 }
 
-/* .post-loss-icon {
-    background-image: url('images/carbon_chart-win-loss.png'); 
-} */
+
 
 .class-selection {
     display: flex;
@@ -358,15 +356,9 @@ body {
     font-size: 16px;
     border: 1px solid #ccc;
     cursor: pointer;
-    width: 100%; /* Adjust the width as needed */
+    width: 100%; 
     text-align: left;
 }
-
-/* .dropbtn:before{
-    content: "●";
-    color: orange;
-    margin-right: 10px;
-} */
 
 .dropbtn div{
     display: flex;
@@ -388,11 +380,11 @@ body {
     background-color: white;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    width: 100%; /* Make the dropdown content same width as the button */
+    width: 100%; 
 }
 
 .dropdown-content a {
-    color: black;
+    color: #121212;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
