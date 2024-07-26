@@ -131,10 +131,10 @@ body {
 
 .sidebar-expansion ul li a {
     text-decoration: none;
-    color: #000;
+    color: #9FA8AF;;
     display: flex;
     align-items: center;
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .sidebar-expansion ul li a.active{
@@ -465,6 +465,20 @@ body {
     color: #7F8B94;
     font-weight: 500;
 }
+.class-circle {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.marine { background-color: purple; }
+.property { background-color: blue; }
+.motors { background-color: orange; }
+.agric { background-color: green; }
+.bond { background-color: gold; }
+.engineering { background-color: red; }
 
 .inspections th img{
     width: 4.01px;

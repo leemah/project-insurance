@@ -23,7 +23,8 @@
                 <p>Welcome. Login to your portal account.</p>
             </div>
 
-            <form>
+            <form id="loginForm">
+                <div id="error-message" style="color: red; margin-top: 10px;"></div>
                 <div class="login-input">
                     <label for="login-id">Login ID</label>
                     <div class="input-content">
@@ -55,7 +56,9 @@
                     </div>
                 </div>
 
-                <button id="loginButton" type="button">Login</button>
+                <button id="loginButton" type="submit">Login</button>
+
+                
             </form>
         </div>
 
@@ -80,11 +83,23 @@
 
 
     <script>
-        // JavaScript code to handle button click event
-        document.getElementById('loginButton').addEventListener('click', function() {
-            // Redirect to the login.html page
-            window.location.href = 'dashboardOverview.html';
-        });
+     document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Get input values
+        var loginID = document.getElementById('login-id').value;
+        var password = document.getElementById('password').value;
+        var errorMessage = document.getElementById('error-message');
+
+        // Check if the input matches the expected values
+        if (loginID === 'admin' && password === 'admin') {
+            // Redirect to another page if credentials are correct
+            window.location.href = 'dashboardOverview.html'; // Replace 'success.html' with your target page
+        } else {
+            // Display error message if credentials are incorrect
+            errorMessage.textContent = 'Invalid login ID or password';
+        }
+    });
     </script>
 </body>
 </html>

@@ -121,6 +121,7 @@ form {
 .login-input, .password-input {
     display: flex;
     flex-direction: column;
+    outline: none;
     padding: 20px;
     border-radius: 5px;
     background-color: #ffffff;
