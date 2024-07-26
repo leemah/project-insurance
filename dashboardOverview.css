@@ -235,19 +235,17 @@ body {
 .user-actions .notification-icon {
     font-size: 24px;
     margin-right: 20px;
-    width: 24px;
-    height: 29px;
+    width: 20px;
+    height: 20px;
 }
-
 .user-profile {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .user-profile img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -255,9 +253,11 @@ body {
 .user-profile span {
     color: #585858;
 }
+
 .user-profile .down-arrow{
     width: 10px;
     height: 10px;
+    margin-left: 5px;
 }
 
 .dashboard {
@@ -379,6 +379,25 @@ body {
     /* border-bottom: 1px solid #D8D8D8; */
     
     font-size: 18px;
+}
+.activity-view {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.activity-view span{
+    font-size: 13px;
+    color: #C3C4C6;
+}
+.activity-view img{
+    width: 5.26px;
+    height: 6.6px;
+    color: #C3C4C6;
+    margin-left: 5px;
+}
+
+.activity-line{
+    border: 1px solid #D8D8D8;
 }
 
 .activity ul {
@@ -652,6 +671,7 @@ td .purple{
 }
 .header{
     margin-top: -50px;
+    
 }
 .main-content {
     padding: 0px;

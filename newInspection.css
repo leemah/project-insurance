@@ -241,6 +241,8 @@ body {
 }
 
 .close-icon2 {
+    width: 48px;
+    height: 48px;
     font-size: 24px;
     color: #888;
 }
@@ -268,6 +270,7 @@ body {
     border: 1px solid #EEEEEE;
     opacity: 0px;
     cursor: pointer;
+    /* position: relative; */
 }
 
 .inspection-option p {
@@ -287,13 +290,31 @@ body {
     justify-content: center;
 }
 
-.pre-loss-icon {
-    background-image: url('images/carbon_chart-win-loss.png'); 
+.pre-loss-icon, .post-loss-icon {
+    /* background-image: url('images/carbon_chart-win-loss.png');  */
+    border: 3px solid #7F8B94;
+    width: 122px;
+    height: 122px;
+    position: relative;
+    
 }
 
-.post-loss-icon {
-    background-image: url('images/carbon_chart-win-loss.png'); 
+.pre-loss-icon img{
+    width: 86px;
+    height: 86px;
 }
+.arrow {
+    position: absolute;
+    left: 0%;
+    top: 60px; 
+    transform: translateX(-50%);
+    width: 48px; /* Adjust the width of the arrow as needed */
+    height: auto;
+}
+
+/* .post-loss-icon {
+    background-image: url('images/carbon_chart-win-loss.png'); 
+} */
 
 .class-selection {
     display: flex;
