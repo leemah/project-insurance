@@ -52,15 +52,15 @@
                 </div>
             </header>
 
-            <div class="survey-details">
+            <!-- <div class="survey-details">
                 <div class="survey-container">
-                    <!-- Div 1: Survey Report Heading -->
+                    
                     <div class="div1">
                         <h1>Survey report</h1>
                         <p>See inspections across all business classes</p>
                     </div>
             
-                    <!-- Div 2: Image, Text, and Progress Pie Chart -->
+                    
                     <div class="div2">
                         <div class="info">
                             <div class="image-container">
@@ -117,7 +117,7 @@
                         </div>
                     </div>
             
-                    <!-- Div 3: Table-like Container -->
+                    
                     <div class="div3">
                         <h2>Insured Details</h2>
                         <div class="tabs">
@@ -170,7 +170,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            <!-- Other tab panels -->
+                            
                             <div id="property-desc" class="tab-content">
                                 <p>Rovenheight homes registered as a LLC building on the 15th of 
                                     May 2016 is a Grey and White twelve storey building located at 
@@ -178,7 +178,7 @@
                                     The property is owned by Mr. Badmus Akinrele who stands as the 
                                     insurer of the property.</p>
                             </div>
-                            <!-- Other tab panels -->
+                            
                             <div id="supporting-doc" class="tab-content">
                                 <div class="document-row">
                                     <div class="document-name">Policy document</div>
@@ -207,9 +207,230 @@
                             </div>
                         </div>
                     </div>
-                    <!-- div 3 ends here -->
+                    
+                </div>
+            </div> -->
+
+            <div class="main-content survey-report-content" id="survey-report-content">
+            
+            <header class="header-2">
+                <div>
+                    <h1>Rovenheight Properties</h1>
+                    <p>See Inspections request details</p>
+                </div>
+            </header>
+
+            <div class="survey-report-container">
+                <div class="property-details">
+                    <div class="property-header">
+                        <div class="property-image">
+                            <img
+                                src="/dashboard/assets/property.jpg"
+                                alt="Property Image"
+                            />
+                            <div class="property-dot-container">
+                                <div class="property-dot"></div>
+                                <p>Property</p>
+                            </div>
+                        </div>
+                        <div class="property-info">
+                            <h2>Rovenheights Properties LTD.</h2>
+                            <div class="info-item-container">
+                                <div class="info-item">
+                                    <p class="label">Policy Number:</p>
+                                    <p class="value">ALR12356483</p>
+                                </div>
+                                <div class="info-item">
+                                    <p class="label">Loss Type:</p>
+                                    <p class="value">Non-Motor</p>
+                                </div>
+                                <div class="info-item">
+                                    <p class="label">Policy Term (Years):</p>
+                                    <p class="value">5</p>
+                                </div>
+                                <div class="info-item">
+                                    <p class="label">Expiry Date:</p>
+                                    <p class="value">19 Dec. 2024</p>
+                                </div>
+                                <div class="info-item">
+                                    <p class="label">Commencement Date:</p>
+                                    <p class="value">19 Dec. 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="policy-progress">
+                            <p>3 Days to Expiry</p>
+                        </div> -->
+                        <div class="progress-container">
+                            <div class="progress-text">Policy Progress</div>
+                            <div class="progress-circle">
+                                <svg
+                                    viewBox="0 0 36 36"
+                                    class="circular-chart orange"
+                                >
+                                    <path
+                                        class="circle-bg"
+                                        d="M18 2.0845
+                                         a 15.9155 15.9155 0 0 1 0 31.831
+                                         a 15.9155 15.9155 0 0 1 0 -31.831"
+                                    />
+                                    <path
+                                        class="circle"
+                                        stroke-dasharray="67, 100"
+                                        d="M18 2.0845
+                                         a 15.9155 15.9155 0 0 1 0 31.831
+                                         a 15.9155 15.9155 0 0 1 0 -31.831"
+                                    />
+                                    <g class="percentage-container">
+                                        <circle
+                                            cx="18"
+                                            cy="18"
+                                            r="10"
+                                            class="percentage-bg"
+                                        />
+                                        <text
+                                            x="18"
+                                            y="20.35"
+                                            class="percentage"
+                                        >
+                                            67%
+                                        </text>
+                                    </g>
+                                </svg>
+                            </div>
+
+                            <div class="progress-days">3 Days to Expiry</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="insured-details">
+                    <h3>Insured Details</h3>
+                    <div class="survey-tabs">
+                        <button
+                            class="survey-tab active"
+                            onclick="openPropertyTab(event, 'property-information')"
+                        >
+                            Property Information
+                        </button>
+                        <button
+                            class="survey-tab"
+                            onclick="openPropertyTab(event, 'property-description-2')"
+                        >
+                            Property Description
+                        </button>
+                        <button
+                            class="survey-tab"
+                            onclick="openPropertyTab(event, 'supporting-document')"
+                        >
+                            Supporting Document
+                        </button>
+                    </div>
+                    <div
+                        id="property-information"
+                        class="survey-tab-content active"
+                    >
+                        <div class="survey-tab-content-grid">
+                            <div class="info-item">
+                                <p>Insured for:</p>
+                                <p>Rovenheight Homes</p>
+                            </div>
+                            <div class="info-item">
+                                <p>Insured Name:</p>
+                                <p>Rovenheight Homes</p>
+                            </div>
+                            <div class="info-item">
+                                <p>Loss estimate:</p>
+                                <p>₦1,200,000</p>
+                            </div>
+                            <div class="info-item">
+                                <p>Cause of Loss:</p>
+                                <p>Rovenheight Homes</p>
+                            </div>
+                            <div class="info-item">
+                                <p>Cause of Loss:</p>
+                                <p>Rovenheight Homes</p>
+                            </div>
+                            <div class="info-item span-2">
+                                <p>Property Address:</p>
+                                <p>
+                                    No. 36, Rovenheight Homes, Nicon town, Lekki
+                                    phase 1, Lagos.
+                                </p>
+                            </div>
+                            <div class="info-item">
+                                <p>City:</p>
+                                <p>Lekki</p>
+                            </div>
+                            <div class="info-item">
+                                <p>State:</p>
+                                <p>Lagos</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="property-description-2" class="survey-tab-content">
+                        <p class="para">
+                            Rovenheight homes registered as a LLC building on
+                            the 15th of May 2016 is a Grey and White twelve
+                            storey building located at No 12 OGUNSANYA DRIVE,
+                            ALCOVE ESTATE, LEKKI PHASE 1, LAGOS STATE. The
+                            property is owned by Mr. Badmus Akinrele who stands
+                            as the insurer of the property.
+                        </p>
+                    </div>
+                    <div id="supporting-document" class="survey-tab-content">
+                        <div class="support-content">
+                            <p class="first-para">Policy document</p>
+                            <div class="support-content-left">
+                                <p class="time">25 Aug, 2022 9:00 AM</p>
+                                <div class="eye-container">
+                                    <button>
+                                        <img
+                                            src="/dashboard/assets/eye.svg"
+                                            alt="eye icon"
+                                        />
+                                    </button>
+                                    <p>View</p>
+                                    <button>Download</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="support-content">
+                            <p class="first-para">Police Report</p>
+                            <div class="support-content-left">
+                                <p class="time">25 Aug, 2022 9:00 AM</p>
+                                <div class="eye-container">
+                                    <button>
+                                        <img
+                                            src="/dashboard/assets/eye.svg"
+                                            alt="eye icon"
+                                        />
+                                    </button>
+                                    <p>View</p>
+                                    <button>Download</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="support-content">
+                            <p class="first-para">Attached Document 1</p>
+                            <div class="support-content-left">
+                                <p class="time">25 Aug, 2022 9:00 AM</p>
+                                <div class="eye-container">
+                                    <button>
+                                        <img
+                                            src="/dashboard/assets/eye.svg"
+                                            alt="eye icon"
+                                        />
+                                    </button>
+                                    <p>View</p>
+                                    <button>Download</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+        </div>
             
             
         </main>

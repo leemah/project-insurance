@@ -691,7 +691,7 @@ td .purple{
     }
 
     .cards {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .card{
@@ -706,7 +706,7 @@ td .purple{
 
 }
 
-/* @media (max-width: 480px) {
+@media (max-width: 480px) {
     body {
         background-color: #FFFBF6;
         width: 100vw;
@@ -752,4 +752,4 @@ td .purple{
         font-size: 16px;
     }
 
-} */
+}
